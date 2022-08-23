@@ -14,10 +14,10 @@ while (playRound < 3) {
   const isCorrect = randomNumber % 2 === 0 ? 'yes' : 'no'; // even / odd check
 
   console.log(`\nQuestion: ${randomNumber}`); // вопрос с числом
-  const playerAnswer = readlineSync.question('Answer: '); // ответ пользователя
+  const playerAnswer = readlineSync.question('Your answer: '); // ответ пользователя
 
   if (playerAnswer !== isCorrect) {
-    console.log(`Sorry! Answer "${playerAnswer}" is wrong! Correct answer was "${isCorrect}".\n`);
+    console.log(`Sorry! The answer "${playerAnswer}" was wrong! The correct answer was "${isCorrect}".\n`);
     console.log(`Try again, ${playerName}\nBye.\n`);
     break;
   }

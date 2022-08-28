@@ -8,3 +8,7 @@
 **brain-even**
 
 [![asciicast](https://asciinema.org/a/sSnu3H8WBRX4fvLxY67uHgujm.svg)](https://asciinema.org/a/sSnu3H8WBRX4fvLxY67uHgujm)
+
+**brain-calc**
+
+[![asciicast](https://asciinema.org/a/7k8OPwIakhgeLTgK7VO4LSTK4.svg)](https://asciinema.org/a/7k8OPwIakhgeLTgK7VO4LSTK4)

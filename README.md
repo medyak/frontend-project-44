@@ -24,3 +24,5 @@
 **brain-prime**
 
 [![asciicast](https://asciinema.org/a/H1VqXjqL5wie2PGkAvhKF5xhk.svg)](https://asciinema.org/a/H1VqXjqL5wie2PGkAvhKF5xhk)
+
+Autotests should be triggered now?

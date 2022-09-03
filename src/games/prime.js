@@ -1,7 +1,7 @@
 import primeGame from '../index.js';
 
 const gameTitle = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomInt = (min = 1, max = 20) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const isPrime = (n) => {
   let d = 2;

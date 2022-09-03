@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import getRandomNumber from './safebelt.js';
 
 import calcGame from '../index.js';
 
@@ -6,8 +7,8 @@ const gameTitle = 'What is the result of the expression?';
 
 const gameInteract = () => {
   const operator = _.sample(['+', '-', '*']);
-  const operandOne = Math.ceil((Math.random()) * 10);
-  const operandTwo = Math.ceil((Math.random()) * 10);
+  const operandOne = getRandomNumber(1, 20);
+  const operandTwo = getRandomNumber(1, 20);
   const roundQuestion = `${operandOne} ${operator} ${operandTwo}`;
 
   let calculatedResult = 0;

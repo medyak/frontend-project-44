@@ -1,12 +1,13 @@
 import progressionGame from '../index.js';
+import getRandomNumber from './safebelt.js';
 
 const gameTitle = 'What number is missing in the progression?';
-const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
-const progressionLength = getRandomInt(5, 10); // progression length
+
+const progressionLength = getRandomNumber(5, 15); // progression length
 
 const getProgression = () => {
-  const firstNumber = getRandomInt(); // 1st value
-  const step = getRandomInt(1, 10); // progression step
+  const firstNumber = getRandomNumber(); // 1st value
+  const step = getRandomNumber(2, 5); // progression step
   const progression = [firstNumber]; // progression values array
 
   let nextElement = firstNumber;
@@ -20,7 +21,7 @@ const getProgression = () => {
 
 const gameInteract = () => {
   const progression = getProgression(); // current progression
-  const progressionElementIndex = getRandomInt(0, progressionLength); // progression random element
+  const progressionElementIndex = getRandomNumber(0, progressionLength); // progression random elem
   const calculatedResult = String(progression[progressionElementIndex]); // store the correct answer
   progression[progressionElementIndex] = '..'; // replace this element value to "secret"
   const progressionList = progression.join(' '); // convert the array to a string

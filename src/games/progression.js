@@ -21,7 +21,7 @@ const getProgression = () => {
 
 const gameInteract = () => {
   const progression = getProgression(); // current progression
-  const progressionElementIndex = getRandomNumber(0, progressionLength); // progression random elem
+  const progressionElementIndex = getRandomNumber(1, progressionLength - 1); // progression elem
   const calculatedResult = String(progression[progressionElementIndex]); // store the correct answer
   progression[progressionElementIndex] = '..'; // replace this element value to "secret"
   const progressionList = progression.join(' '); // convert the array to a string

@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-import gcdGame from '../index.js';
-import getRandomNumber from './safebelt.js';
+import startGcdGame from '../index.js';
+import getRandomValue from '../utils.js';
 
 const gameTitle = 'Find the greatest common divisor of given numbers.';
 
 const gameInteract = () => {
-  let firstNumber = getRandomNumber(1, 15);
-  let secondNumber = getRandomNumber(1, 15);
+  let firstNumber = getRandomValue(1, 15);
+  let secondNumber = getRandomValue(1, 15);
   const numbersPair = `${firstNumber} ${secondNumber}`;
 
   while (firstNumber !== 0 && secondNumber !== 0) { // the result will be equal to non-zero value
@@ -22,4 +22,4 @@ const gameInteract = () => {
   return [numbersPair, String(calculatedResult)];
 };
 
-export default () => gcdGame(gameTitle, gameInteract);
+export default () => startGcdGame(gameTitle, gameInteract);

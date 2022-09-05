@@ -10,8 +10,8 @@ A set of five simple console games based on the popular mobile brain training ap
 ```
 - Install Node.js (latest stable version)
 - Clone the repository on your machine (git clone)
-- Run the dependency install (make install).
-- In shell type "sudo npm link"
+- Run the dependencies install (make install).
+- In the shell type "sudo npm link"
 ```
 ## Game: "Parity check"
 The idea of the game is as follows: the player is presented with a random number. He must answer **yes** if the number is even or **no** if it is odd.

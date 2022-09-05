@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import calcGame from '../index.js';
+import startCalcGame from '../index.js';
 import getRandomValue from '../utils.js';
 
 const gameTitle = 'What is the result of the expression?';
@@ -32,4 +32,4 @@ const gameInteract = () => {
   return [roundQuestion, String(calculatedResult)];
 };
 
-export default () => calcGame(gameTitle, gameInteract);
+export default () => startCalcGame(gameTitle, gameInteract);

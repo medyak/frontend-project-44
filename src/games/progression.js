@@ -1,7 +1,7 @@
 import startProgressionGame from '../index.js';
 import { getRandomValue } from '../utils.js';
 
-const gameTitle = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the progression?';
 
 const progressionLength = getRandomValue(5, 15); // progression length
 
@@ -29,4 +29,4 @@ const gameInteract = () => {
   return [progressionList, calculatedResult];
 };
 
-export default () => startProgressionGame(gameTitle, gameInteract);
+export default () => startProgressionGame(gameDescription, gameInteract);

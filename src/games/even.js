@@ -1,7 +1,7 @@
 import startEvenGame from '../index.js';
 import { getRandomValue } from '../utils.js';
 
-const gameTitle = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const gameInteract = () => {
   const randomNumber = getRandomValue();
@@ -10,4 +10,4 @@ const gameInteract = () => {
   return [randomNumber, calculatedResult];
 };
 
-export default () => startEvenGame(gameTitle, gameInteract);
+export default () => startEvenGame(gameDescription, gameInteract);

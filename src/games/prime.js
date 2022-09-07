@@ -1,7 +1,7 @@
 import startPrimeGame from '../index.js';
 import { getRandomValue } from '../utils.js';
 
-const gameTitle = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (n) => {
   for (let i = 2; i < n; i += 1) {
@@ -17,4 +17,4 @@ const gameInteract = () => {
   return [getNumber, calculatedAnswer];
 };
 
-export default () => startPrimeGame(gameTitle, gameInteract);
+export default () => startPrimeGame(gameDescription, gameInteract);

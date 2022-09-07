@@ -1,5 +1,5 @@
 import startProgressionGame from '../index.js';
-import getRandomValue from '../utils.js';
+import { getRandomValue } from '../utils.js';
 
 const gameTitle = 'What number is missing in the progression?';
 

@@ -9,10 +9,11 @@ const gameRoundData = () => {
   const operator = _.sample(['+', '-', '*']);
   const operandOne = getRandomValue(1, 20);
   const operandTwo = getRandomValue(1, 20);
-  const roundQuestion = `${operandOne} ${operator} ${operandTwo}`;
-  const calculatedResult = calculateValues(operandOne, operandTwo, operator);
 
-  return [roundQuestion, String(calculatedResult)];
+  const question = `${operandOne} ${operator} ${operandTwo}`;
+  const answer = calculateValues(operandOne, operandTwo, operator);
+
+  return [question, String(answer)];
 };
 
 export default () => startCalcGame(gameDescription, gameRoundData);

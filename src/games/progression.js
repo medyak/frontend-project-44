@@ -22,11 +22,11 @@ const getProgression = () => {
 const gameRoundData = () => {
   const progression = getProgression();
   const progressionElementIndex = getRandomValue(1, progressionLength - 1);
-  const calculatedResult = String(progression[progressionElementIndex]);
+  const answer = String(progression[progressionElementIndex]);
   progression[progressionElementIndex] = '..'; // replace this element value to "secret"
-  const progressionList = progression.join(' ');
+  const question = progression.join(' ');
 
-  return [progressionList, calculatedResult];
+  return [question, answer];
 };
 
 export default () => startProgressionGame(gameDescription, gameRoundData);

@@ -4,9 +4,9 @@ import { getRandomValue } from '../utils.js';
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const gameRoundData = () => {
-  const randomNumber = getRandomValue();
-  const calculatedResult = randomNumber % 2 === 0 ? 'yes' : 'no';
-  return [randomNumber, calculatedResult];
+  const question = getRandomValue();
+  const answer = question % 2 === 0 ? 'yes' : 'no';
+  return [question, answer];
 };
 
 export default () => startEvenGame(gameDescription, gameRoundData);

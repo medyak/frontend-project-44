@@ -6,7 +6,7 @@ const gameDescription = 'Find the greatest common divisor of given numbers.';
 const gameRoundData = () => {
   let firstNumber = getRandomValue(1, 15);
   let secondNumber = getRandomValue(1, 15);
-  const numbersPair = `${firstNumber} ${secondNumber}`;
+  const question = `${firstNumber} ${secondNumber}`;
 
   while (firstNumber !== 0 && secondNumber !== 0) {
     if (firstNumber > secondNumber) {
@@ -15,9 +15,9 @@ const gameRoundData = () => {
       secondNumber %= firstNumber;
     }
   }
-  const calculatedResult = firstNumber + secondNumber;
+  const answer = firstNumber + secondNumber;
 
-  return [numbersPair, String(calculatedResult)];
+  return [question, String(answer)];
 };
 
 export default () => startGcdGame(gameDescription, gameRoundData);

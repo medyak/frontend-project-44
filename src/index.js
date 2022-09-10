@@ -11,19 +11,19 @@ export default (gameDescription, gameRoundData) => {
   let currentRound = 0;
 
   while (currentRound < playRounds) {
-    const [question, calculatedResult] = gameRoundData();
+    const [question, answer] = gameRoundData();
 
     console.log(`Question: ${question}`);
 
     const playerAnswer = readlineSync.question('Answer: ');
 
-    if (playerAnswer !== calculatedResult) {
-      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${calculatedResult}'.`);
+    if (playerAnswer !== answer) {
+      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       console.log(`Let's try again, ${playerName}!`);
       break;
     }
 
-    if (playerAnswer === calculatedResult) {
+    if (playerAnswer === answer) {
       console.log('Correct!');
       currentRound += 1;
     }

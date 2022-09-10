@@ -5,7 +5,7 @@ import { getRandomValue, calculateValues } from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const gameInteract = () => {
+const gameData = () => {
   const operator = _.sample(['+', '-', '*']);
   const operandOne = getRandomValue(1, 20);
   const operandTwo = getRandomValue(1, 20);
@@ -15,4 +15,4 @@ const gameInteract = () => {
   return [roundQuestion, String(calculatedResult)];
 };
 
-export default () => startCalcGame(gameDescription, gameInteract);
+export default () => startCalcGame(gameDescription, gameData);

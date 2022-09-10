@@ -1,11 +1,9 @@
-#!/usr/bin/env node
-
 import startGcdGame from '../index.js';
 import { getRandomValue } from '../utils.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-const gameInteract = () => {
+const gameData = () => {
   let firstNumber = getRandomValue(1, 15);
   let secondNumber = getRandomValue(1, 15);
   const numbersPair = `${firstNumber} ${secondNumber}`;
@@ -22,4 +20,4 @@ const gameInteract = () => {
   return [numbersPair, String(calculatedResult)];
 };
 
-export default () => startGcdGame(gameDescription, gameInteract);
+export default () => startGcdGame(gameDescription, gameData);

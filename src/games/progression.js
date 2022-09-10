@@ -19,7 +19,7 @@ const getProgression = () => {
   return progression;
 };
 
-const gameInteract = () => {
+const gameData = () => {
   const progression = getProgression(); // current progression
   const progressionElementIndex = getRandomValue(1, progressionLength - 1); // progression elem
   const calculatedResult = String(progression[progressionElementIndex]); // store the correct answer
@@ -29,4 +29,4 @@ const gameInteract = () => {
   return [progressionList, calculatedResult];
 };
 
-export default () => startProgressionGame(gameDescription, gameInteract);
+export default () => startProgressionGame(gameDescription, gameData);

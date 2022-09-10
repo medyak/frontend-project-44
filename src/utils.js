@@ -43,4 +43,16 @@ const getGCD = (firstNumber, secondNumber) => {
   return first + second;
 };
 
-export { getRandomValue, calculateValues, isPrime, getGCD };
+const getProgressionArray = (progressionLength, progressionFirstNumber, progressionStep) => {
+  let nextElement = progressionFirstNumber;
+  const progression = [nextElement];
+
+  for (let i = 1; i < progressionLength; i += 1) {
+    nextElement += progressionStep;
+    progression.push(nextElement);
+  }
+
+  return progression;
+};
+
+export { getRandomValue, calculateValues, isPrime, getGCD, getProgressionArray };

@@ -10,11 +10,11 @@ const isPrime = (n) => {
   return 'yes';
 };
 
-const gameData = () => {
-  const getNumber = getRandomValue(1, 20); // get a number to the prime test
+const gameRoundData = () => {
+  const getNumber = getRandomValue(1, 20);
   const calculatedAnswer = isPrime(getNumber);
 
   return [getNumber, calculatedAnswer];
 };
 
-export default () => startPrimeGame(gameDescription, gameData);
+export default () => startPrimeGame(gameDescription, gameRoundData);

@@ -1,4 +1,6 @@
 /* eslint-disable import/prefer-default-export */
+/* eslint object-curly-newline: ["error", "never"] */
+
 const getRandomValue = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const calculateValues = (operandOne, operandTwo, operator) => {
@@ -26,4 +28,19 @@ const isPrime = (n) => {
   return true;
 };
 
-export { getRandomValue, calculateValues, isPrime };
+const getGCD = (firstNumber, secondNumber) => {
+  let first = firstNumber;
+  let second = secondNumber;
+
+  while (first !== 0 && second !== 0) {
+    if (first > second) {
+      first %= second;
+    } else {
+      second %= first;
+    }
+  }
+
+  return first + second;
+};
+
+export { getRandomValue, calculateValues, isPrime, getGCD };

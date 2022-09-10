@@ -7,8 +7,10 @@ export default (gameTitle, gameInteract) => {
   console.log(`Hello, ${playerName}!`);
   console.log(gameTitle); // Title of a game
 
-  let playRound = 0; // each game have 3 rounds always.
-  while (playRound < 3) {
+  const playRounds = 3; // each game have 3 rounds
+  let currentRound = 0;
+
+  while (currentRound < playRounds) {
     const [question, calculatedResult] = gameInteract();
 
     console.log(`Question: ${question}`);
@@ -23,10 +25,10 @@ export default (gameTitle, gameInteract) => {
 
     if (playerAnswer === calculatedResult) {
       console.log('Correct!');
-      playRound += 1;
+      currentRound += 1;
     }
 
-    if (playRound === 3) {
+    if (currentRound === 3) {
       console.log(`Congratulations, ${playerName}!`);
     }
   }

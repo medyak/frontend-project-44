@@ -2,6 +2,7 @@ import startGcdGame from '../index.js';
 import { getRandomValue } from '../utils.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
+
 const getGCD = (firstNumber, secondNumber) => {
   let first = firstNumber;
   let second = secondNumber;

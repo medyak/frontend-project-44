@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "Brain Games",
+  "description": "[![Actions Status](https://github.com/medyak/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/medyak/frontend-project-44/actions)",
   "type": "module",
   "main": "index.js",
   "bin": {

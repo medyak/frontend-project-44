@@ -12,21 +12,6 @@ const isPrime = (n) => {
   return true;
 };
 
-const getGCD = (firstNumber, secondNumber) => {
-  let first = firstNumber;
-  let second = secondNumber;
-
-  while (first !== 0 && second !== 0) {
-    if (first > second) {
-      first %= second;
-    } else {
-      second %= first;
-    }
-  }
-
-  return first + second;
-};
-
 const getProgressionArray = (progressionLength, progressionFirstNumber, progressionStep) => {
   let nextElement = progressionFirstNumber;
   const progression = [nextElement];
@@ -39,4 +24,4 @@ const getProgressionArray = (progressionLength, progressionFirstNumber, progress
   return progression;
 };
 
-export { getRandomValue, isEven, isPrime, getGCD, getProgressionArray };
+export { getRandomValue, isEven, isPrime, getProgressionArray };

@@ -5,13 +5,6 @@ const getRandomValue = (min = 1, max = 100) => Math.floor(Math.random() * (max -
 
 const isEven = (n) => n % 2 === 0;
 
-const isPrime = (n) => {
-  for (let i = 2; i < n; i += 1) {
-    if (n % i === 0) return false;
-  }
-  return true;
-};
-
 const getProgressionArray = (progressionLength, progressionFirstNumber, progressionStep) => {
   let nextElement = progressionFirstNumber;
   const progression = [nextElement];
@@ -24,4 +17,4 @@ const getProgressionArray = (progressionLength, progressionFirstNumber, progress
   return progression;
 };
 
-export { getRandomValue, isEven, isPrime, getProgressionArray };
+export { getRandomValue, isEven, getProgressionArray };

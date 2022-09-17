@@ -7,10 +7,10 @@ export default (gameDescription, getRoundData) => {
   console.log(`Hello, ${playerName}!`);
   console.log(gameDescription);
 
-  const playRounds = 3;
-  let currentRound = 0;
+  const roundsCount = 3;
+  let currentRoundCount = 0;
 
-  while (currentRound < playRounds) {
+  while (currentRoundCount < roundsCount) {
     const [question, answer] = getRoundData();
 
     console.log(`Question: ${question}`);
@@ -25,10 +25,10 @@ export default (gameDescription, getRoundData) => {
 
     if (playerAnswer === answer) {
       console.log('Correct!');
-      currentRound += 1;
+      currentRoundCount += 1;
     }
 
-    if (currentRound === 3) {
+    if (currentRoundCount === 3) {
       console.log(`Congratulations, ${playerName}!`);
     }
   }

@@ -22,9 +22,9 @@ const getRoundData = () => {
   const progressionStep = getRandomValue(2, 5);
   const aProgression = getProgression(progressionLength, progressionFirstNumber, progressionStep);
 
-  const ItemIdToHide = getRandomValue(1, progressionLength - 1);
-  const answer = String(aProgression[ItemIdToHide]);
-  aProgression[ItemIdToHide] = '..';
+  const hiddenItemId = getRandomValue(1, progressionLength - 1);
+  const answer = String(aProgression[hiddenItemId]);
+  aProgression[hiddenItemId] = '..';
   const question = aProgression.join(' ');
 
   return [question, answer];

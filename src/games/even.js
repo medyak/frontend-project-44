@@ -1,7 +1,8 @@
 import startEvenGame from '../index.js';
-import { getRandomValue, isEven } from '../utils.js';
+import { getRandomValue } from '../utils.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+const isEven = (n) => n % 2 === 0;
 
 const gameRoundData = () => {
   const question = getRandomValue();

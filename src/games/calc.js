@@ -23,7 +23,7 @@ const calculateValues = (operandOne, operandTwo, operator) => {
   return result;
 };
 
-const gameRoundData = () => {
+const getRoundData = () => {
   const operator = _.sample(['+', '-', '*']);
   const operandOne = getRandomValue(1, 20);
   const operandTwo = getRandomValue(1, 20);
@@ -34,4 +34,4 @@ const gameRoundData = () => {
   return [question, String(answer)];
 };
 
-export default () => startCalcGame(gameDescription, gameRoundData);
+export default () => startCalcGame(gameDescription, getRoundData);

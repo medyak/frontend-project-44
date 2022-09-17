@@ -18,7 +18,7 @@ const getGCD = (firstNumber, secondNumber) => {
   return first + second;
 };
 
-const gameRoundData = () => {
+const getRoundData = () => {
   const firstNumber = getRandomValue(1, 15);
   const secondNumber = getRandomValue(1, 15);
   const question = `${firstNumber} ${secondNumber}`;
@@ -27,4 +27,4 @@ const gameRoundData = () => {
   return [question, String(answer)];
 };
 
-export default () => startGcdGame(gameDescription, gameRoundData);
+export default () => startGcdGame(gameDescription, getRoundData);

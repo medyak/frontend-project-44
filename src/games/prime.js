@@ -11,11 +11,11 @@ const isPrime = (n) => {
   return true;
 };
 
-const gameRoundData = () => {
+const getRoundData = () => {
   const question = getRandomValue(1, 20);
   const answer = isPrime(question) ? 'yes' : 'no';
 
   return [question, answer];
 };
 
-export default () => startPrimeGame(gameDescription, gameRoundData);
+export default () => startPrimeGame(gameDescription, getRoundData);

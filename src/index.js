@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export default (gameDescription, gameRoundData) => {
+export default (gameDescription, getRoundData) => {
   console.log('Welcome to the Brain Games!');
 
   const playerName = readlineSync.question('May I have your name?: ');
@@ -11,7 +11,7 @@ export default (gameDescription, gameRoundData) => {
   let currentRound = 0;
 
   while (currentRound < playRounds) {
-    const [question, answer] = gameRoundData();
+    const [question, answer] = getRoundData();
 
     console.log(`Question: ${question}`);
 
